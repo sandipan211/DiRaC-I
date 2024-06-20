@@ -1,0 +1,102 @@
+1	sailing/ boating
+2	driving
+3	biking
+4	transporting things or people
+5	sunbathing
+6	vacationing/ touring
+7	hiking
+8	climbing
+9	camping
+10	reading
+11	studying/ learning
+12	teaching/ training
+13	research
+14	diving
+15	swimming
+16	bathing
+17	eating
+18	cleaning
+19	socializing
+20	congregating
+21	waiting in line/ queuing
+22	competing
+23	sports
+24	exercise
+25	playing
+26	gaming
+27	spectating/ being in an audience
+28	farming
+29	constructing/ building
+30	shopping
+31	medical activity
+32	working
+33	using tools
+34	digging
+35	conducting business
+36	praying
+37	fencing
+38	railing
+39	wire
+40	railroad
+41	trees
+42	grass
+43	vegetation
+44	shrubbery
+45	foliage
+46	leaves
+47	flowers
+48	asphalt
+49	pavement
+50	shingles
+51	carpet
+52	brick
+53	tiles
+54	concrete
+55	metal
+56	paper
+57	wood (not part of a tree)
+58	vinyl/ linoleum
+59	rubber/ plastic
+60	cloth
+61	sand
+62	rock/stone
+63	dirt/soil
+64	marble
+65	glass
+66	waves/ surf
+67	ocean
+68	running water
+69	still water
+70	ice
+71	snow
+72	clouds
+73	smoke
+74	fire
+75	natural light
+76	direct sun/sunny
+77	electric/indoor lighting
+78	aged/ worn
+79	glossy
+80	matte
+81	sterile
+82	moist/ damp
+83	dry
+84	dirty
+85	rusty
+86	warm
+87	cold
+88	natural
+89	man-made
+90	open area
+91	semi-enclosed area
+92	enclosed area
+93	far-away horizon
+94	no horizon
+95	rugged scene
+96	mostly vertical components
+97	mostly horizontal components
+98	symmetrical
+99	cluttered space
+100	scary
+101	soothing
+102	stressful
