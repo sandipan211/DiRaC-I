@@ -1,0 +1,15 @@
+002.Laysan_Albatross
+003.Sooty_Albatross
+048.European_Goldfinch
+067.Anna_Hummingbird
+068.Ruby_throated_Hummingbird
+069.Rufous_Hummingbird
+073.Blue_Jay
+074.Florida_Jay
+075.Green_Jay
+076.Dark_eyed_Junco
+090.Red_breasted_Merganser
+100.Brown_Pelican
+001.Black_footed_Albatross
+014.Indigo_Bunting
+101.White_Pelican
