@@ -1,0 +1,14 @@
+DATA:
+    dataset: CUB
+    num_class: 200
+    num_attribute: 312
+    img_size: 448
+MODEL:
+    resnet_region: 196
+    dim_f: 2048
+    dim_v: 300
+TRAIN:    
+    device: cuda:0
+    batch_size: 50
+    epochs: 200
+    
