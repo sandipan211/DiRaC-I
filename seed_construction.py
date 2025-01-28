@@ -34,44 +34,6 @@ def cluster_classes(att_df, linkage, num_classes):
 		silhouette_avg = silhouette_score(X, cluster_labels)
 		silhouette_avg_per_clustering.append((n_clusters, silhouette_avg))
 		
-		# print("For n_clusters =", n_clusters, "The average silhouette_score is :", silhouette_avg)
-	# 	fig, (ax1, ax2) = plt.subplots(1, 2)
-
-	# 	fig.set_size_inches(15, 5)
-
-	# 	ax1.set_xlim([-0.1, 1])
-	# 	ax1.set_ylim([0, len(X) + (n_clusters + 1) * 10])
-
-	# 	sample_silhouette_values = silhouette_samples(X, cluster_labels)
-
-	# 	y_lower = 10
-	# 	for i in range(n_clusters):
-	# 		ith_cluster_silhouette_values = sample_silhouette_values[cluster_labels == i]
-
-	# 		ith_cluster_silhouette_values.sort()
-
-	# 		size_cluster_i = ith_cluster_silhouette_values.shape[0]
-	# 		y_upper = y_lower + size_cluster_i
-
-	# 		color = cm.nipy_spectral(float(i) / n_clusters)
-	# 		ax1.fill_betweenx(np.arange(y_lower, y_upper), 0, ith_cluster_silhouette_values, facecolor=color, edgecolor=color, alpha=0.7)
-	# 		ax1.text(-0.05, y_lower + 0.5 * size_cluster_i, str(i))
-	# 		y_lower = y_upper + 10  # 10 for the 0 samples
-
-	# 	ax1.set_title("The silhouette plot for the various clusters.")
-	# 	ax1.set_xlabel("The silhouette coefficient values")
-	# 	ax1.set_ylabel("Cluster label")
-	# 	ax1.axvline(x=silhouette_avg, color="red", linestyle="--")
-
-	# 	ax1.set_yticks([])  # Clear the yaxis labels / ticks
-	# 	ax1.set_xticks([-0.1, 0, 0.2, 0.4, 0.6, 0.8, 1])
-	# 	ax = Axes3D(fig)
-	# 	colors = cm.nipy_spectral(cluster_labels.astype(float) / n_clusters)
-	# 	ax.scatter(X[:, 1], X[:, 2], X[:, 0],marker='o', s=20, lw=0, alpha=0.7, c=colors, edgecolor='k')
-
-	# 	plt.suptitle(("Silhouette analysis for HAC-average clustering on sample data with n_clusters = %d" % n_clusters), fontsize=14, fontweight='bold')
-
-	# plt.savefig('clustering.png')
 
 	return clustered_classes, silhouette_avg_per_clustering
 
@@ -159,10 +121,7 @@ def get_seeds(att_df, class_clusters_by_name):
 			final_weight_per_class = semantics_for_att_imp.dot(att_weights)
 			print(final_weight_per_class)
 
-			# decision = dist_mat.sum(axis = 1)
-			# decision = decision.div(final_weight_per_class)
-			# seed_classes.append(decision.index[decision.argmin()])
-			# print('\n\nSeed class added : {}'.format(decision.index[decision.argmin()]))
+
 
 			seed_classes.append(final_weight_per_class.index[final_weight_per_class.argmax()])
 			print('\n\nSeed class added : {}'.format(final_weight_per_class.index[final_weight_per_class.argmax()]))
