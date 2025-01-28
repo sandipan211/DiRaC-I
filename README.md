@@ -1,4 +1,18 @@
-# DiRaC-I: Identifying Diverse and Rare Training Classes for Zero-Shot Learning 
+# DiRaC-I: Identifying Diverse and Rare Training Classes for Zero-Shot Learning (ACM TOMM 2023)
 
-## Published in ACM Transactions on Multimedia Computing, Communications, and Applications, 2023
-Intelligent algorithm for selecting suitable training classes for zero-shot object recognition that capture domain diversity and rarity. Instructions to be uploaded soon.
+## 👓 At a glance
+This repository contains the official PyTorch implementation of our ACM TOMM 2023 paper : [DiRaC-I: Identifying Diverse and Rare Training Classes for Zero-Shot Learning]([url](https://dl.acm.org/doi/10.1145/3603147)), a work done by Sandipan Sarma and Arijit Sur at [Indian Institute of Technology Guwahati]([url](https://www.iitg.ac.in/cseweb/mmlab/index2.html)).
+
+
+- Most existing ZSL works in image classification use a predetermined, disjoint set of seen-unseen classes [[1]](#1) to evaluate their methods. These seen (training) classes might be sub-optimal for ZSL methods to appreciate the diversity and rarity of an object domain.
+- In this work, we propose a framework called Diverse and Rare Class Identifier (DiRaC-I) which, given an attribute-based dataset, can intelligently yield the most suitable “seen classes” for training ZSL models. DiRaC-I has two main goals:
+  - constructing a diversified set of seed classes
+  - using them to initialize a visual-semantic mining algorithm for acquiring the classes capturing both diversity and rarity in the object domain adequately. These classes can then be used as “seen classes” to train ZSL models, boosting their performance for image classification.
+- We simulate a real-world scenario where visual samples of novel object classes in the wild are available to neither DiRaC-I nor the ZSL models during training and conducted extensive experiments on two benchmark data sets for zero-shot image classification — CUB and SUN.
+
+# :scroll: References
+<a id="1">[1]</a> 
+Y. Xian, C. H. Lampert, B. Schiele and Z. Akata, "Zero-Shot Learning—A Comprehensive Evaluation of the Good, the Bad and the Ugly," in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 41, no. 9, pp. 2251-2265, 1 Sept. 2019, doi: 10.1109/TPAMI.2018.2857768.
+
+
+## More updates - coming soon!
