@@ -54,16 +54,6 @@ python3 ale_gzsl.py -data CUB -sn 1 -al_lr 0.01 -e 50 -es 100 -norm 'L2' -lr 0.3
 # python3 sje_gzsl.py -data CUB -sn 1 -al_lr 0.01 -e 50 -es 100 -norm 'std' -lr 0.1 -mr 4.0 -al_seed 'new_seed_final'
 
 
-# # For FGN - faulty - dont run
-
-# # cd /home/gdata/sandipan/BTP2021/new_zsl_models/FGN
-
-# # CUDA_VISIBLE_DEVICES=0 python3 clswgan.py --manualSeed 3483 --val_every 1 --cls_weight 0.01 --preprocessing --cuda --image_embedding res101 --class_embedding att --netG_name MLP_G --netD_name MLP_CRITIC --nepoch 70 --ngh 4096 --ndh 4096 --lr 0.0001 --classifier_lr 0.001 --lambda1 10 --critic_iter 5 --dataset CUB --batch_size 64 --nz 312 --attSize 312 --resSize 2048 --syn_num 300 --outname cub --al_seed 'original'
-# # python3 clswgan.py --manualSeed 3483 --val_every 1 --cls_weight 0.01 --preprocessing --cuda --image_embedding res101 --class_embedding att --netG_name MLP_G --netD_name MLP_CRITIC --nepoch 70 --ngh 4096 --ndh 4096 --lr 0.0001 --classifier_lr 0.001 --lambda1 10 --critic_iter 5 --dataset CUB --batch_size 64 --nz 312 --attSize 312 --resSize 2048 --syn_num 300 --outname cub --al_seed 'original'
-# # python3 clswgan.py --manualSeed 3483 --val_every 1 --cls_weight 0.01 --preprocessing --cuda --image_embedding res101 --class_embedding att --netG_name MLP_G --netD_name MLP_CRITIC --nepoch 70 --ngh 4096 --ndh 4096 --lr 0.0001 --classifier_lr 0.001 --lambda1 10 --critic_iter 5 --dataset CUB --batch_size 64 --nz 312 --attSize 312 --resSize 2048 --syn_num 300 --outname cub --al_seed 'new_seed_final'
-# # python3 clswgan.py --manualSeed 3483 --val_every 1 --cls_weight 0.01 --preprocessing --cuda --image_embedding res101 --class_embedding att --netG_name MLP_G --netD_name MLP_CRITIC --nepoch 70 --ngh 4096 --ndh 4096 --lr 0.0001 --classifier_lr 0.001 --lambda1 10 --critic_iter 5 --dataset CUB --batch_size 64 --nz 312 --attSize 312 --resSize 2048 --syn_num 300 --outname cub --al_seed 'original' --gzsl
-# # python3 clswgan.py --manualSeed 3483 --val_every 1 --cls_weight 0.01 --preprocessing --cuda --image_embedding res101 --class_embedding att --netG_name MLP_G --netD_name MLP_CRITIC --nepoch 70 --ngh 4096 --ndh 4096 --lr 0.0001 --classifier_lr 0.001 --lambda1 10 --critic_iter 5 --dataset CUB --batch_size 64 --nz 312 --attSize 312 --resSize 2048 --syn_num 300 --outname cub --al_seed 'new_seed_final' --gzsl
-
 
 # # For LSRGAN
 # cd /home/gdata/sandipan/BTP2021/new_zsl_models/LSRGAN
@@ -78,7 +68,6 @@ python3 ale_gzsl.py -data CUB -sn 1 -al_lr 0.01 -e 50 -es 100 -norm 'L2' -lr 0.3
 
 
 # # For TFVAEGAN
-# # carefully check all new params with what keerti ran
 
 # cd /home/gdata/sandipan/BTP2021/new_zsl_models/TFVAEGAN/tfvaegan-master
 
@@ -94,14 +83,6 @@ python3 ale_gzsl.py -data CUB -sn 1 -al_lr 0.01 -e 50 -es 100 -norm 'L2' -lr 0.3
 # --nclass_all 200 --batch_size 64 --nz 312 --latent_size 312 --attSize 312 --resSize 2048 --syn_num 300 \
 # --recons_weight 0.01 --a1 1 --a2 1 --feed_lr 0.00001 --dec_lr 0.0001 --feedback_loop 2 --al_seed 'new_seed_final'
 
-
-
-
-
-# For SAGAN
-# cd /home/gdata/sandipan/BTP2021/new_zsl_models/SAGAN
-
-# python3 sagan.py --dataset CUB --sn 1 --al_lr 0.01 --al_seed 'original' --d_lr 0.05 --g_lr 0.05 --hl 512 --t 0.05 --paper_gamma 0.001 
 
 
 
