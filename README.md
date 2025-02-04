@@ -38,7 +38,11 @@ datasets
 ```
 
 Then, we separate some train-test data for testing ResNet model performance:
+```bash
+python3 train_test_split.py
+```
 
+## 🚄 Training DiRaC-I
 
 
 ## :scroll: References
