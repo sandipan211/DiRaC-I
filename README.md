@@ -43,6 +43,18 @@ python3 train_test_split.py
 ```
 
 ## 🚄 Training DiRaC-I
+```bash
+cd scripts
+sh run_AL_<DATASET>.sh
+```
+
+## 🔍 Evaluating ZSL models
+```bash
+cd scripts
+sh run_ZSL_<DATASET>.sh
+```
+
+Inside the script file, uncomment the one you want to run. Note that the argument *al_seed* should be set to _original_ if the ZSL method runs following the original seen-unseen splits [[1]](#1), and set to _new_seed_final_ if the method runs following seen-unseen splits produced by DiRaC-I.
 
 
 ## :scroll: References
