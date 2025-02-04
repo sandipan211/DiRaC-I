@@ -56,6 +56,24 @@ sh run_ZSL_<DATASET>.sh
 
 Inside the script file, uncomment the one you want to run. Note that the argument *al_seed* should be set to _original_ if the ZSL method runs following the original seen-unseen splits [[1]](#1), and set to _new_seed_final_ if the method runs following seen-unseen splits produced by DiRaC-I.
 
+## 🏆 Results
+![dirac-i results](https://github.com/user-attachments/assets/f9efbff2-7bfb-40bb-af46-e7f91bd5ae80)
+
+## 🎁 Citation
+If you use our work for your research, kindly star :star: our repository and consider citing our work using the following BibTex:
+```
+@article{sarma2023dirac,
+  title={DiRaC-I: Identifying Diverse and Rare Training Classes for Zero-Shot Learning},
+  author={Sarma, Sandipan and Sur, Arijit},
+  journal={ACM Transactions on Multimedia Computing, Communications and Applications},
+  volume={20},
+  number={1},
+  pages={1--23},
+  year={2023},
+  publisher={ACM New York, NY}
+}
+```
+
 
 ## :scroll: References
 <a id="1">[1]</a> 
