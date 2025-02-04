@@ -1,8 +1,7 @@
 #!/bin/bash
 # cd /home/gdata/sandipan/BTP2021
 
-# in CSE DGX
-# in rare_effects.py, comment out for CNZSL and TransZero if running for SUN dataset
+
 cd /workspace/arijit_pg/BTP2021
 
 # ############################# commands for split 1 #################################
