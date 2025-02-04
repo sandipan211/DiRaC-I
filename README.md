@@ -23,58 +23,22 @@ We evaluate our performance on two benchmark ZSL datasets: [CUB](https://www.vis
 
 ```
 datasets
-│   Label.mat
-│   Split.mat    
-│
-└───ActivityNet_v_1_3
-│   │   activity_net.v1-3.min.json
-│   │   anet_classwise_videos.npy
-│   |   anet_splits.npy
-│   └───Anet_videos_15fps_short256
-│       │   v___c8enCfzqw.mp4
-│       │   v___dXUJsj3yo.mp4
-│       |   ...
-│
-└───hmdb
-│   └───hmdb51_org
-│       └───brush_hair
-│       └───cartwheel
+└───CUB
+│   └───Data
+│       └───001.Black_footed_Albatross
+│       └───002.Laysan_Albatross
 │       └───...
-│   
-└───kinetics-400
-│   └───train_256
-│   │   └───abseiling
-│   │   └───air_drumming
-│   │   └───...
-│   │
-│   └───val_256
-│   │   └───abseiling
-│   │   └───air_drumming
-│   │   └───...
-│   └───zsar_kinetics_400
-│   
-└───kinetics-600
-│   │   download.py
-│   │   test.csv  
-│   │   validate.csv
-│   │ 
-│   └───test
-│   │   └───abseiling
-│   │   └───acting in play
-│   │   └───...
-│   │
-│   └───validate
-│   │   └───abseiling
-│   │   └───acting in play
-│   │   └───...
-│   └───zsar_kinetics_600
-│   
-└───ucf
-│   └───UCF101
-│       └───ApplyEyeMakeup
-│       └───ApplyLipstick
+│
+└───SUN
+│   └───Data
+│       └───abbey
+│       └───access_road
 │       └───...
+
 ```
+
+Then, we separate some train-test data for testing ResNet model performance:
+
 
 
 ## :scroll: References
